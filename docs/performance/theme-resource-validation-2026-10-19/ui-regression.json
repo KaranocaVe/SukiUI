@@ -1,0 +1,6874 @@
+{
+  "Started": "2026-10-19T22:23:09.10878+08:00",
+  "Finished": "2026-10-19T22:27:04.173225+08:00",
+  "Metadata": {
+    "commit": "205fd1f50ea1470c72bfc55cb69c4008a1511b46",
+    "workingTree": "M SukiUI.PerformanceTests/ThemeDiagnostics.cs\n M SukiUI/Theme/Index.axaml.cs",
+    "os": "Darwin 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:59 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8142",
+    "architecture": "Arm64",
+    "runtime": ".NET 8.0.32",
+    "cpu": "Apple M5",
+    "logicalProcessors": "10",
+    "avalonia": "12.1.1.0",
+    "configuration": "Release",
+    "tieredCompilation": "disabled in child processes",
+    "renderer": "Avalonia.Headless \u002B Skia CPU; no GPU or native window",
+    "iterations": "3",
+    "warmups": "1",
+    "repetitions": "1",
+    "seed": "2718",
+    "command": "/Users/karanocave/.codex/worktrees/theme-resource-investigation/SukiUI/artifacts/theme-validation/frozen/final/SukiUI.PerformanceTests.dll --filter mount,layout,interaction,theme,navigation,list/,datagrid/,colorpicker,dock,render,background --iterations 3 --warmup 1 --repetitions 1 --seed 2718 --output artifacts/theme-validation/ui-regression",
+    "SukiUI.PerformanceTestsSha256": "ECF6E64B074689401D5F894E4AC129E3F0AC06EA8BD48CBFBDABAD47D5D3BDA5",
+    "SukiUISha256": "16CB4DAE6F319283ED70A23981C57A51E94F129D4571367252D8E4F818C32135",
+    "SukiUI.MotionSha256": "46FCFDDB9FE8F97F6B5FE6AB31B67698DE21C5079220F6A5DAD22EF46E3C04F1",
+    "SukiUI.ConditionalXAMLSha256": "38F7BFC38030B4E3842E8DAE98F04E2F3A640CE075AD20402F24B704218A581C"
+  },
+  "Results": [
+    {
+      "Id": "datagrid/scroll/suki/10000",
+      "Area": "datagrid",
+      "Scale": 10000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 797.1003,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 8.6392,
+          "UiBytes": 696264,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.7405,
+          "UiBytes": 479976,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.4907,
+          "UiBytes": 477304,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/circle/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.7602,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.0732,
+          "UiBytes": 806624,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7621,
+          "UiBytes": 788224,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.809,
+          "UiBytes": 788224,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 67,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/suki/10000",
+      "Area": "list",
+      "Scale": 10000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 280.8057,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.819,
+          "UiBytes": 4001584,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.4578,
+          "UiBytes": 4001384,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.3427,
+          "UiBytes": 3862616,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/change/suki/1",
+      "Area": "colorpicker",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 283.2495,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.257,
+          "UiBytes": 85120,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0443,
+          "UiBytes": 21464,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0351,
+          "UiBytes": 21464,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 110,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/expander/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.9035,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.0352,
+          "UiBytes": 3149840,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.6225,
+          "UiBytes": 3071584,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 7.2663,
+          "UiBytes": 3147960,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 287,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/glasscard/suki/10",
+      "Area": "render",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.5632,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.6852,
+          "UiBytes": 6552,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.4286,
+          "UiBytes": 6552,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.4235,
+          "UiBytes": 6552,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 67,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 1036
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/change/suki/20",
+      "Area": "colorpicker",
+      "Scale": 20,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 288.9473,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.6802,
+          "UiBytes": 747568,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.827,
+          "UiBytes": 423400,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.6485,
+          "UiBytes": 422896,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2067,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/simple/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 287.4017,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 40.1983,
+          "UiBytes": 25830224,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 52.0013,
+          "UiBytes": 25266080,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 48.2425,
+          "UiBytes": 25240880,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.605,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 899.2893,
+          "UiBytes": 302636736,
+          "Gen0": 40,
+          "Gen1": 17,
+          "Gen2": 5,
+          "Metrics": null
+        },
+        {
+          "Ms": 974.7181,
+          "UiBytes": 302698496,
+          "Gen0": 42,
+          "Gen1": 19,
+          "Gen2": 7,
+          "Metrics": null
+        },
+        {
+          "Ms": 930.5713,
+          "UiBytes": 302698160,
+          "Gen0": 43,
+          "Gen1": 20,
+          "Gen2": 8,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/simple/10000",
+      "Area": "list",
+      "Scale": 10000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.7004,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.4915,
+          "UiBytes": 1353040,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.1587,
+          "UiBytes": 1195920,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.5913,
+          "UiBytes": 1195920,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/switch/suki/5",
+      "Area": "dock",
+      "Scale": 5,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 312.4849,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.009,
+          "UiBytes": 35592,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.161,
+          "UiBytes": 22352,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1062,
+          "UiBytes": 21880,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 162,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/wave/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.6408,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 368.2504,
+          "UiBytes": 157621808,
+          "Gen0": 20,
+          "Gen1": 8,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 386.4227,
+          "UiBytes": 157621536,
+          "Gen0": 20,
+          "Gen1": 8,
+          "Gen2": 4,
+          "Metrics": null
+        },
+        {
+          "Ms": 428.158,
+          "UiBytes": 157540096,
+          "Gen0": 20,
+          "Gen1": 9,
+          "Gen2": 4,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 8007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/suki/10",
+      "Area": "layout",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.4993,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 18.1135,
+          "UiBytes": 147136,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1951,
+          "UiBytes": 40736,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0837,
+          "UiBytes": 40232,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/simple/10",
+      "Area": "theme",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 159.2405,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.0604,
+          "UiBytes": 84352,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3087,
+          "UiBytes": 50736,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1937,
+          "UiBytes": 50144,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 130,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/simple/1000",
+      "Area": "list",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.3279,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.4552,
+          "UiBytes": 1255616,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.2992,
+          "UiBytes": 1196848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.1253,
+          "UiBytes": 1196848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "navigation/search/suki/1000",
+      "Area": "navigation",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 274.7664,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 10.8435,
+          "UiBytes": 2460088,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.5658,
+          "UiBytes": 1581520,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 19.4507,
+          "UiBytes": 2475504,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 15137,
+        "width": 1280,
+        "height": 800,
+        "expandedMenuItemBorders": 1000
+      },
+      "Error": null
+    },
+    {
+      "Id": "navigation/search/suki/100",
+      "Area": "navigation",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.4394,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 7.4083,
+          "UiBytes": 476072,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3514,
+          "UiBytes": 162144,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2576,
+          "UiBytes": 165696,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1637,
+        "width": 1280,
+        "height": 800,
+        "expandedMenuItemBorders": 100
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/suki/100",
+      "Area": "layout",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.2059,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 21.4438,
+          "UiBytes": 855632,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.2307,
+          "UiBytes": 441288,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.843,
+          "UiBytes": 440784,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/wave/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.2686,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.8293,
+          "UiBytes": 1579960,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.6242,
+          "UiBytes": 1523600,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.7287,
+          "UiBytes": 1522856,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 87,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/switch/suki/100",
+      "Area": "dock",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 300.9145,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.9125,
+          "UiBytes": 123400,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.446,
+          "UiBytes": 101048,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3324,
+          "UiBytes": 100568,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2157,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/same-write/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.106,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 26.1093,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 26.0625,
+            "flushMs": 0.036,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 25.9264,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 25.8877,
+            "flushMs": 0.0353,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 26.4975,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 26.4579,
+            "flushMs": 0.0357,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/change/suki/5",
+      "Area": "colorpicker",
+      "Scale": 5,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 285.125,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.4037,
+          "UiBytes": 169632,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1646,
+          "UiBytes": 105976,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1552,
+          "UiBytes": 105976,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 522,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/accent/suki/100",
+      "Area": "theme",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.4921,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 8.4115,
+          "UiBytes": 918688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.3971,
+          "UiBytes": 663728,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.1493,
+          "UiBytes": 667344,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/suki/10000",
+      "Area": "list",
+      "Scale": 10000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.6158,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.0611,
+          "UiBytes": 1964944,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.7499,
+          "UiBytes": 1880272,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4228,
+          "UiBytes": 1879472,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 282.0075,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 61.1118,
+          "UiBytes": 30194512,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 70.2092,
+          "UiBytes": 29338024,
+          "Gen0": 5,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 71.2945,
+          "UiBytes": 29350872,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2207,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/simple/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 170.8277,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 25.3302,
+          "UiBytes": 16763944,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 24.1208,
+          "UiBytes": 16136560,
+          "Gen0": 2,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 33.6596,
+          "UiBytes": 16137016,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1607,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/suki/500",
+      "Area": "render",
+      "Scale": 500,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.2779,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 8.4039,
+          "UiBytes": 561624,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 7.2888,
+          "UiBytes": 561624,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 6.9176,
+          "UiBytes": 561624,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 11132,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 610
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/simple/10",
+      "Area": "layout",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 166.4642,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.1123,
+          "UiBytes": 32600,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0857,
+          "UiBytes": 36096,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0641,
+          "UiBytes": 35040,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 130,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/gauge/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.387,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 66.7977,
+          "UiBytes": 27537672,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 52.9452,
+          "UiBytes": 25881368,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 50.224,
+          "UiBytes": 25881664,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.6224,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.0952,
+          "UiBytes": 1731800,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.8895,
+          "UiBytes": 1709248,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.8726,
+          "UiBytes": 1708504,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 117,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/scroll/suki/100000",
+      "Area": "datagrid",
+      "Scale": 100000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 287.2573,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 8.2043,
+          "UiBytes": 704120,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.8145,
+          "UiBytes": 480784,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.2042,
+          "UiBytes": 478040,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/locale/suki/1000",
+      "Area": "theme",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.4068,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 679.3315,
+          "UiBytes": 47684624,
+          "Gen0": 5,
+          "Gen1": 5,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 679.8811,
+          "UiBytes": 47692624,
+          "Gen0": 6,
+          "Gen1": 6,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 714.8738,
+          "UiBytes": 47684624,
+          "Gen0": 6,
+          "Gen1": 6,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.1515,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.5371,
+          "UiBytes": 3355384,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.1007,
+          "UiBytes": 3289848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 7.966,
+          "UiBytes": 3354000,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/glasscard/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.0227,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.3746,
+          "UiBytes": 1125856,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.0344,
+          "UiBytes": 1001544,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.1032,
+          "UiBytes": 1001544,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 67,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/simple/10",
+      "Area": "render",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 157.9637,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.2999,
+          "UiBytes": 6176,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1935,
+          "UiBytes": 6176,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.179,
+          "UiBytes": 6176,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 130,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 630
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/mount/suki/1000",
+      "Area": "datagrid",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 288.9973,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 35.2332,
+          "UiBytes": 18976096,
+          "Gen0": 2,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 39.4667,
+          "UiBytes": 18269568,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 56.3057,
+          "UiBytes": 18269936,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/suki/1000",
+      "Area": "list",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.5912,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.0685,
+          "UiBytes": 4002744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.302,
+          "UiBytes": 4002544,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.389,
+          "UiBytes": 3863776,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/simple/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 159.3055,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 144.8674,
+          "UiBytes": 87855184,
+          "Gen0": 11,
+          "Gen1": 4,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 154.5122,
+          "UiBytes": 87854712,
+          "Gen0": 10,
+          "Gen1": 3,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 180.8831,
+          "UiBytes": 87855896,
+          "Gen0": 11,
+          "Gen1": 4,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 11007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "background/software/flat/1",
+      "Area": "background",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.3511,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.2686,
+          "UiBytes": 18696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.3202,
+          "UiBytes": 18608,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.092,
+          "UiBytes": 18872,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "pixels": 1024000,
+        "gpuShaderMeasured": 0
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/simple/1000",
+      "Area": "interaction",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.1928,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.1886,
+          "UiBytes": 704616,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.438,
+          "UiBytes": 912000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.9437,
+          "UiBytes": 704000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 3007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/simple/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 160.6988,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 396.3227,
+          "UiBytes": 169936360,
+          "Gen0": 23,
+          "Gen1": 10,
+          "Gen2": 3,
+          "Metrics": null
+        },
+        {
+          "Ms": 409.5326,
+          "UiBytes": 169935568,
+          "Gen0": 25,
+          "Gen1": 12,
+          "Gen2": 5,
+          "Metrics": null
+        },
+        {
+          "Ms": 412.6552,
+          "UiBytes": 169935632,
+          "Gen0": 25,
+          "Gen1": 12,
+          "Gen2": 5,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 16007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/variant-only/mixed/0",
+      "Area": "theme-diag",
+      "Scale": 0,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 274.9046,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0413,
+          "UiBytes": 4848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0381,
+            "flushMs": 0.001,
+            "updateBytes": 3856,
+            "flushBytes": 0,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0277,
+          "UiBytes": 4144,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0269,
+            "flushMs": 0.0002,
+            "updateBytes": 3152,
+            "flushBytes": 0,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0207,
+          "UiBytes": 4144,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0203,
+            "flushMs": 0.0001,
+            "updateBytes": 3152,
+            "flushBytes": 0,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 7,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/expander/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 274.9315,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 57.0379,
+          "UiBytes": 31530128,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 68.4642,
+          "UiBytes": 30824592,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 71.499,
+          "UiBytes": 31529016,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2807,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/same-write/mixed/0",
+      "Area": "theme-diag",
+      "Scale": 0,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.5949,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0369,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0338,
+            "flushMs": 0.001,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0214,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0203,
+            "flushMs": 0.0002,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0189,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0185,
+            "flushMs": 0,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 7,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/variant-only/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.4029,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 177.4043,
+          "UiBytes": 29994104,
+          "Gen0": 3,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 95.735,
+            "flushMs": 81.6579,
+            "updateBytes": 20909488,
+            "flushBytes": 9083624,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 196.6613,
+          "UiBytes": 28554320,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 113.8163,
+            "flushMs": 82.8417,
+            "updateBytes": 17732016,
+            "flushBytes": 10821312,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 176.5496,
+          "UiBytes": 28224264,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 95.5597,
+            "flushMs": 80.9866,
+            "updateBytes": 18618016,
+            "flushBytes": 9605256,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/simple/1000",
+      "Area": "list",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 160.5123,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.907,
+          "UiBytes": 673608,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7016,
+          "UiBytes": 637408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.6947,
+          "UiBytes": 645280,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/bar/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 291.9559,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.1463,
+          "UiBytes": 3706184,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4079,
+          "UiBytes": 3521000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.2465,
+          "UiBytes": 3521416,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 297,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/simple/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 162.7677,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.4434,
+          "UiBytes": 2690328,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.0127,
+          "UiBytes": 2480064,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.9161,
+          "UiBytes": 2477400,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 207,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/simple/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 163.988,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 18.172,
+          "UiBytes": 13850000,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 25.623,
+          "UiBytes": 13410848,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 24.0537,
+          "UiBytes": 13403936,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/suki/100000",
+      "Area": "list",
+      "Scale": 100000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.6681,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.0963,
+          "UiBytes": 4001584,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.6973,
+          "UiBytes": 4001384,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.5629,
+          "UiBytes": 3862616,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/shadcn/100",
+      "Area": "theme",
+      "Scale": 100,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 293.3654,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 19.2979,
+          "UiBytes": 3456328,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 35.6436,
+          "UiBytes": 7177488,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 11.1985,
+          "UiBytes": 2488640,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 2
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 273.6493,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.8931,
+          "UiBytes": 4600400,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.1242,
+          "UiBytes": 4603384,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.9445,
+          "UiBytes": 4547024,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 277,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/simple/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.433,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 434.6005,
+          "UiBytes": 178055400,
+          "Gen0": 24,
+          "Gen1": 10,
+          "Gen2": 3,
+          "Metrics": null
+        },
+        {
+          "Ms": 437.3157,
+          "UiBytes": 178057536,
+          "Gen0": 25,
+          "Gen1": 11,
+          "Gen2": 5,
+          "Metrics": null
+        },
+        {
+          "Ms": 440.592,
+          "UiBytes": 178078208,
+          "Gen0": 25,
+          "Gen1": 11,
+          "Gen2": 4,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 15757,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/bar/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.1278,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1526.7772,
+          "UiBytes": 394877864,
+          "Gen0": 55,
+          "Gen1": 29,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1469.51,
+          "UiBytes": 394778880,
+          "Gen0": 54,
+          "Gen1": 28,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1476.7588,
+          "UiBytes": 394778680,
+          "Gen0": 54,
+          "Gen1": 28,
+          "Gen2": 9,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 29007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/simple/1000",
+      "Area": "theme",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.2942,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 52.5275,
+          "UiBytes": 9455200,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 45.4364,
+          "UiBytes": 9453584,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 48.1138,
+          "UiBytes": 9453496,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 15757,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/accent/suki/10",
+      "Area": "theme",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.4275,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.292,
+          "UiBytes": 65840,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3125,
+          "UiBytes": 64176,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2952,
+          "UiBytes": 64712,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/shadcn/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 304.6115,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 263.5244,
+          "UiBytes": 37673968,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 158.2202,
+            "flushMs": 105.2943,
+            "updateBytes": 24047680,
+            "flushBytes": 13625296,
+            "applicationEvents": 2,
+            "windowEvents": 2,
+            "leafEvents": 2,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 584.4288,
+          "UiBytes": 76224648,
+          "Gen0": 10,
+          "Gen1": 4,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 208.663,
+            "flushMs": 375.7616,
+            "updateBytes": 30671688,
+            "flushBytes": 45551968,
+            "applicationEvents": 2,
+            "windowEvents": 2,
+            "leafEvents": 2,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 290.1224,
+          "UiBytes": 37625648,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 208.6852,
+            "flushMs": 81.4337,
+            "updateBytes": 24047456,
+            "flushBytes": 13577200,
+            "applicationEvents": 2,
+            "windowEvents": 2,
+            "leafEvents": 2,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/wave/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.449,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 21.7701,
+          "UiBytes": 15574432,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 25.2396,
+          "UiBytes": 15077072,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 33.9835,
+          "UiBytes": 15079632,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 807,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/mount/suki/100",
+      "Area": "dock",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 303.1144,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 70.624,
+          "UiBytes": 30472456,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 77.5652,
+          "UiBytes": 30470656,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 69.3823,
+          "UiBytes": 30429392,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2153,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/simple/100",
+      "Area": "render",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 157.6485,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.8556,
+          "UiBytes": 53104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.638,
+          "UiBytes": 53104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.5828,
+          "UiBytes": 53104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1257,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 540
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/bar/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.9995,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 68.3995,
+          "UiBytes": 39462128,
+          "Gen0": 5,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 73.7378,
+          "UiBytes": 37632160,
+          "Gen0": 5,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 59.0726,
+          "UiBytes": 39461768,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2907,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/suki/1000",
+      "Area": "interaction",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.1886,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.6854,
+          "UiBytes": 1200000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 10.3462,
+          "UiBytes": 1080000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.8663,
+          "UiBytes": 1200000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 11007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "background/software/gradient/1",
+      "Area": "background",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.0671,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.2747,
+          "UiBytes": 18696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.4045,
+          "UiBytes": 18872,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.0773,
+          "UiBytes": 18608,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "pixels": 1024000,
+        "gpuShaderMeasured": 0
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/shadcn/1000",
+      "Area": "theme",
+      "Scale": 1000,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 288.0027,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 268.8524,
+          "UiBytes": 37673016,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 581.7754,
+          "UiBytes": 76223080,
+          "Gen0": 10,
+          "Gen1": 4,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 378.7619,
+          "UiBytes": 37496848,
+          "Gen0": 5,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 2
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/unused-write/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.9432,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 26.374,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 26.3248,
+            "flushMs": 0.0388,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 26.4109,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 26.3684,
+            "flushMs": 0.0394,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 26.1581,
+          "UiBytes": 1988368,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 26.1129,
+            "flushMs": 0.0432,
+            "updateBytes": 1987376,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/simple/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 161.8657,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.661,
+          "UiBytes": 1659968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.48,
+          "UiBytes": 1599848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.4236,
+          "UiBytes": 1599848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 167,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/simple/100",
+      "Area": "list",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 159.3871,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.5419,
+          "UiBytes": 1255616,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.1799,
+          "UiBytes": 1196848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.0845,
+          "UiBytes": 1196848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/repeat-theme/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.3751,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 31.7972,
+          "UiBytes": 1992080,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 31.7323,
+            "flushMs": 0.0503,
+            "updateBytes": 1991088,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 30.0211,
+          "UiBytes": 1992080,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 29.9641,
+            "flushMs": 0.0517,
+            "updateBytes": 1991088,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 32.0181,
+          "UiBytes": 1992080,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 31.9672,
+            "flushMs": 0.0458,
+            "updateBytes": 1991088,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 289.0001,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1657.4497,
+          "UiBytes": 460906400,
+          "Gen0": 62,
+          "Gen1": 31,
+          "Gen2": 8,
+          "Metrics": null
+        },
+        {
+          "Ms": 2010.1126,
+          "UiBytes": 460947336,
+          "Gen0": 66,
+          "Gen1": 34,
+          "Gen2": 12,
+          "Metrics": null
+        },
+        {
+          "Ms": 1832.0596,
+          "UiBytes": 460948248,
+          "Gen0": 65,
+          "Gen1": 34,
+          "Gen2": 11,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 27007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/bare/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 287.446,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.1817,
+          "UiBytes": 10120,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.1737,
+            "flushMs": 0.0024,
+            "updateBytes": 9128,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0924,
+          "UiBytes": 9416,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0914,
+            "flushMs": 0.0003,
+            "updateBytes": 8424,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0799,
+          "UiBytes": 9416,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0793,
+            "flushMs": 0.0001,
+            "updateBytes": 8424,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 1007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/locale/suki/100",
+      "Area": "theme",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.3661,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 55.5263,
+          "UiBytes": 4797824,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 55.9075,
+          "UiBytes": 4798624,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 54.319,
+          "UiBytes": 4797824,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "background/software/gradientsoft/1",
+      "Area": "background",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.1874,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.2255,
+          "UiBytes": 18696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.3381,
+          "UiBytes": 18872,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.9001,
+          "UiBytes": 18608,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "pixels": 1024000,
+        "gpuShaderMeasured": 0
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 298.1633,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 113.9562,
+          "UiBytes": 46021512,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 139.3471,
+          "UiBytes": 46025592,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 123.0747,
+          "UiBytes": 46025680,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2707,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/simple/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 168.6339,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 11.0653,
+          "UiBytes": 8407376,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.3682,
+          "UiBytes": 7954592,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.785,
+          "UiBytes": 8391696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1107,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/toggle/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.3269,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.021,
+          "UiBytes": 2982768,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4475,
+          "UiBytes": 2912024,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 7.063,
+          "UiBytes": 2979696,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 227,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/simple/100",
+      "Area": "interaction",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 176.0505,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.98,
+          "UiBytes": 71016,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1112,
+          "UiBytes": 91200,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0759,
+          "UiBytes": 70400,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 307,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/simple/10",
+      "Area": "interaction",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 161.0445,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.9024,
+          "UiBytes": 7656,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.015,
+          "UiBytes": 9120,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0076,
+          "UiBytes": 7040,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 37,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/mount/suki/20",
+      "Area": "dock",
+      "Scale": 20,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 309.5461,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 11.9803,
+          "UiBytes": 6690856,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 15.3826,
+          "UiBytes": 6676376,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 15.3895,
+          "UiBytes": 6671592,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 473,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 294.1532,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 403.1017,
+          "UiBytes": 167405936,
+          "Gen0": 22,
+          "Gen1": 10,
+          "Gen2": 3,
+          "Metrics": null
+        },
+        {
+          "Ms": 437.4653,
+          "UiBytes": 167425272,
+          "Gen0": 23,
+          "Gen1": 11,
+          "Gen2": 4,
+          "Metrics": null
+        },
+        {
+          "Ms": 398.0005,
+          "UiBytes": 167425200,
+          "Gen0": 23,
+          "Gen1": 11,
+          "Gen2": 4,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 11007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/suki/100",
+      "Area": "interaction",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.0943,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.3782,
+          "UiBytes": 120000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7821,
+          "UiBytes": 108000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2905,
+          "UiBytes": 120000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1107,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/glasscard/suki/500",
+      "Area": "render",
+      "Scale": 500,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.7983,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.2945,
+          "UiBytes": 232952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.685,
+          "UiBytes": 232952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.5726,
+          "UiBytes": 232952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 3007,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 831
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/0",
+      "Area": "theme-diag",
+      "Scale": 0,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 289.8042,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0473,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0435,
+            "flushMs": 0.0014,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0235,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0228,
+            "flushMs": 0.0002,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0211,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0207,
+            "flushMs": 0.0001,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 7,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/suki/100",
+      "Area": "list",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.226,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.8256,
+          "UiBytes": 4002744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.5861,
+          "UiBytes": 4002544,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.2598,
+          "UiBytes": 3863776,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/unused-write/mixed/100",
+      "Area": "theme-diag",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.6895,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.4668,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.4552,
+            "flushMs": 0.0053,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2.2932,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.2882,
+            "flushMs": 0.003,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2.3635,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.3577,
+            "flushMs": 0.0037,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.7001,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 197.1927,
+          "UiBytes": 32170416,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 118.2328,
+            "flushMs": 78.9494,
+            "updateBytes": 22920816,
+            "flushBytes": 9248608,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 200.1667,
+          "UiBytes": 30041040,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 119.994,
+            "flushMs": 80.1687,
+            "updateBytes": 19743344,
+            "flushBytes": 10296704,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 198.1088,
+          "UiBytes": 27911664,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 120.928,
+            "flushMs": 77.177,
+            "updateBytes": 18861344,
+            "flushBytes": 9049328,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 323.2858,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1100.6046,
+          "UiBytes": 342625256,
+          "Gen0": 47,
+          "Gen1": 21,
+          "Gen2": 7,
+          "Metrics": null
+        },
+        {
+          "Ms": 1203.452,
+          "UiBytes": 342629280,
+          "Gen0": 48,
+          "Gen1": 21,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1270.286,
+          "UiBytes": 342638456,
+          "Gen0": 47,
+          "Gen1": 20,
+          "Gen2": 7,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "navigation/search/suki/10",
+      "Area": "navigation",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.0702,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 7.7358,
+          "UiBytes": 259664,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0931,
+          "UiBytes": 20168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0475,
+          "UiBytes": 19600,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 270,
+        "width": 1280,
+        "height": 800,
+        "expandedMenuItemBorders": 10
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/suki/100",
+      "Area": "list",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.9944,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.5916,
+          "UiBytes": 1964944,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.624,
+          "UiBytes": 1880272,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4199,
+          "UiBytes": 1879472,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/suki/100",
+      "Area": "theme",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.4158,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 13.9559,
+          "UiBytes": 2403880,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 8.0778,
+          "UiBytes": 1849128,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 12.1624,
+          "UiBytes": 2350816,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/simple/100000",
+      "Area": "list",
+      "Scale": 100000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 417.7728,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.9105,
+          "UiBytes": 673608,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7653,
+          "UiBytes": 637408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7043,
+          "UiBytes": 645280,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/simple/100",
+      "Area": "theme",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 175.0116,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.3476,
+          "UiBytes": 672816,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.8054,
+          "UiBytes": 504888,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.6785,
+          "UiBytes": 504184,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1257,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/simple/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 185.0205,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1326.682,
+          "UiBytes": 414597840,
+          "Gen0": 56,
+          "Gen1": 25,
+          "Gen2": 8,
+          "Metrics": null
+        },
+        {
+          "Ms": 1439.8419,
+          "UiBytes": 414602136,
+          "Gen0": 57,
+          "Gen1": 25,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1439.4042,
+          "UiBytes": 414598000,
+          "Gen0": 57,
+          "Gen1": 24,
+          "Gen2": 9,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 33007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/suki/100000",
+      "Area": "list",
+      "Scale": 100000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.0251,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.6253,
+          "UiBytes": 1964944,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.6333,
+          "UiBytes": 1880272,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.8703,
+          "UiBytes": 2030640,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/simple/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 158.6385,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.5408,
+          "UiBytes": 461256,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.408,
+          "UiBytes": 423136,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.367,
+          "UiBytes": 423136,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 37,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/mount/suki/1",
+      "Area": "colorpicker",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 297.3947,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.6597,
+          "UiBytes": 4337936,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 7.7089,
+          "UiBytes": 4798416,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.9872,
+          "UiBytes": 3736352,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 110,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/mount/suki/100000",
+      "Area": "datagrid",
+      "Scale": 100000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 289.1065,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 43.4757,
+          "UiBytes": 21057032,
+          "Gen0": 2,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 44.8961,
+          "UiBytes": 20351392,
+          "Gen0": 3,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 48.8605,
+          "UiBytes": 20350344,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/simple/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 168.8602,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.1364,
+          "UiBytes": 3878016,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.9456,
+          "UiBytes": 3612072,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4898,
+          "UiBytes": 3612488,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 307,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/scroll/suki/100",
+      "Area": "datagrid",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 290.9453,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.3065,
+          "UiBytes": 688048,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.4946,
+          "UiBytes": 476744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.3148,
+          "UiBytes": 476008,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/bare/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.2887,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0821,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0752,
+            "flushMs": 0.0021,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0308,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0296,
+            "flushMs": 0.0003,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.1062,
+          "UiBytes": 6688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.1049,
+            "flushMs": 0.0005,
+            "updateBytes": 5696,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 1007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "background/software/bubble/1",
+      "Area": "background",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 293.6904,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.1385,
+          "UiBytes": 18696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.1686,
+          "UiBytes": 18872,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.9538,
+          "UiBytes": 18608,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "pixels": 1024000,
+        "gpuShaderMeasured": 0
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/mount/suki/20",
+      "Area": "colorpicker",
+      "Scale": 20,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 284.3201,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 87.6797,
+          "UiBytes": 74960408,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 111.1975,
+          "UiBytes": 75004960,
+          "Gen0": 5,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 106.0626,
+          "UiBytes": 73685024,
+          "Gen0": 5,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2067,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "interaction/enable/suki/10",
+      "Area": "interaction",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 304.7442,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0352,
+          "UiBytes": 12000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0783,
+          "UiBytes": 10800,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0247,
+          "UiBytes": 12000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 117,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 293.4689,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.297,
+          "UiBytes": 4372584,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 10.5302,
+          "UiBytes": 4373832,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.1351,
+          "UiBytes": 4266000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 297,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/100",
+      "Area": "theme-diag",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.5225,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 8.8673,
+          "UiBytes": 919640,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 4.1558,
+            "flushMs": 4.7048,
+            "updateBytes": 436168,
+            "flushBytes": 482480,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 3.3908,
+          "UiBytes": 664680,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 3.0374,
+            "flushMs": 0.3522,
+            "updateBytes": 433496,
+            "flushBytes": 230192,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 3.2499,
+          "UiBytes": 668296,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.8535,
+            "flushMs": 0.3951,
+            "updateBytes": 437112,
+            "flushBytes": 230192,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/mount/simple/100000",
+      "Area": "list",
+      "Scale": 100000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 160.344,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.5454,
+          "UiBytes": 1254688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.1727,
+          "UiBytes": 1195920,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.085,
+          "UiBytes": 1195920,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/infobar/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.0245,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1886.1921,
+          "UiBytes": 516426648,
+          "Gen0": 68,
+          "Gen1": 28,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1962.4649,
+          "UiBytes": 516467144,
+          "Gen0": 70,
+          "Gen1": 30,
+          "Gen2": 10,
+          "Metrics": null
+        },
+        {
+          "Ms": 1968.8661,
+          "UiBytes": 516466640,
+          "Gen0": 68,
+          "Gen1": 28,
+          "Gen2": 9,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 38007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/gauge/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.7297,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.6301,
+          "UiBytes": 2616680,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.717,
+          "UiBytes": 2479088,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.4828,
+          "UiBytes": 2480472,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 207,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/unused-write/bare/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.803,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0441,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0411,
+            "flushMs": 0.0009,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0252,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0245,
+            "flushMs": 0.0002,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0232,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0227,
+            "flushMs": 0.0001,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 1007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.2902,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1562.9739,
+          "UiBytes": 438769984,
+          "Gen0": 61,
+          "Gen1": 27,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1654.3018,
+          "UiBytes": 438833664,
+          "Gen0": 60,
+          "Gen1": 26,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1577.4441,
+          "UiBytes": 438830216,
+          "Gen0": 62,
+          "Gen1": 27,
+          "Gen2": 10,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 29007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/suki/100",
+      "Area": "render",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.2184,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.5241,
+          "UiBytes": 117208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.8629,
+          "UiBytes": 117208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.4423,
+          "UiBytes": 117208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 340
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/simple/100",
+      "Area": "list",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 170.2524,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.9029,
+          "UiBytes": 673608,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.6828,
+          "UiBytes": 637408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.6972,
+          "UiBytes": 645280,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/circle/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 314.6089,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 150.4626,
+          "UiBytes": 74684440,
+          "Gen0": 9,
+          "Gen1": 4,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 168.4977,
+          "UiBytes": 74684664,
+          "Gen0": 10,
+          "Gen1": 4,
+          "Gen2": 3,
+          "Metrics": null
+        },
+        {
+          "Ms": 182.6387,
+          "UiBytes": 74683696,
+          "Gen0": 11,
+          "Gen1": 5,
+          "Gen2": 3,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 6007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/infobar/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 302.3947,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 112.0145,
+          "UiBytes": 51360592,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 131.1999,
+          "UiBytes": 50234944,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 109.656,
+          "UiBytes": 51363000,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 3807,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/mount/suki/100",
+      "Area": "datagrid",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 286.7167,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 35.5675,
+          "UiBytes": 18961688,
+          "Gen0": 2,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 37.6373,
+          "UiBytes": 18255160,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 54.1525,
+          "UiBytes": 18255480,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/switch/suki/20",
+      "Area": "dock",
+      "Scale": 20,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 315.8461,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.3392,
+          "UiBytes": 49880,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2246,
+          "UiBytes": 35208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.14,
+          "UiBytes": 34728,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 477,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/mount/suki/10000",
+      "Area": "datagrid",
+      "Scale": 10000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 287.4915,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 35.5951,
+          "UiBytes": 19221952,
+          "Gen0": 2,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 37.314,
+          "UiBytes": 18515424,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 54.9095,
+          "UiBytes": 18515728,
+          "Gen0": 4,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/circle/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.1527,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.7845,
+          "UiBytes": 7301640,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 9.8735,
+          "UiBytes": 7307472,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 11.0439,
+          "UiBytes": 7158840,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 607,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/accent/suki/1000",
+      "Area": "theme",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.8163,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 96.487,
+          "UiBytes": 9666536,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 78.6675,
+          "UiBytes": 9662256,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 75.3572,
+          "UiBytes": 8895520,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "background/software/gradientdarker/1",
+      "Area": "background",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.568,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.0674,
+          "UiBytes": 18696,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.1668,
+          "UiBytes": 18608,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.8873,
+          "UiBytes": 18872,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "pixels": 1024000,
+        "gpuShaderMeasured": 0
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/suki/10",
+      "Area": "render",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.4629,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.453,
+          "UiBytes": 11208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3121,
+          "UiBytes": 11208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.3132,
+          "UiBytes": 11208,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 316
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/textbox/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 277.5254,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 88.3212,
+          "UiBytes": 43765976,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 96.8492,
+          "UiBytes": 43772216,
+          "Gen0": 5,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 112.5385,
+          "UiBytes": 43776272,
+          "Gen0": 5,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2907,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/glasscard/suki/100",
+      "Area": "render",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 276.4546,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.3569,
+          "UiBytes": 56952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.1537,
+          "UiBytes": 56952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.4917,
+          "UiBytes": 56952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 607,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 960
+      },
+      "Error": null
+    },
+    {
+      "Id": "dock/mount/suki/5",
+      "Area": "dock",
+      "Scale": 5,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 303.9524,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.492,
+          "UiBytes": 2182920,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.8283,
+          "UiBytes": 2227512,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.6991,
+          "UiBytes": 2170696,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 158,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/shadcn/10",
+      "Area": "theme",
+      "Scale": 10,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 294.858,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.8558,
+          "UiBytes": 248008,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 2.1395,
+          "UiBytes": 588064,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.0732,
+          "UiBytes": 245800,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 2
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/unused-write/mixed/0",
+      "Area": "theme-diag",
+      "Scale": 0,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 280.9535,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0349,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0317,
+            "flushMs": 0.001,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0214,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0204,
+            "flushMs": 0.0003,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0193,
+          "UiBytes": 2312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.019,
+            "flushMs": 0,
+            "updateBytes": 1320,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 7,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/gauge/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.6959,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1158.8179,
+          "UiBytes": 276055840,
+          "Gen0": 39,
+          "Gen1": 22,
+          "Gen2": 7,
+          "Metrics": null
+        },
+        {
+          "Ms": 1316.5208,
+          "UiBytes": 276076280,
+          "Gen0": 41,
+          "Gen1": 23,
+          "Gen2": 9,
+          "Metrics": null
+        },
+        {
+          "Ms": 1246.1075,
+          "UiBytes": 276075688,
+          "Gen0": 38,
+          "Gen1": 21,
+          "Gen2": 7,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 20007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/suki/1000",
+      "Area": "layout",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 337.1928,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 42.8375,
+          "UiBytes": 7361168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 54.5491,
+          "UiBytes": 7357768,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 44.9454,
+          "UiBytes": 7360888,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/0",
+      "Area": "theme-diag",
+      "Scale": 0,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 282.0032,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0719,
+          "UiBytes": 10120,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0687,
+            "flushMs": 0.001,
+            "updateBytes": 9128,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0496,
+          "UiBytes": 9416,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0488,
+            "flushMs": 0.0002,
+            "updateBytes": 8424,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 0.0416,
+          "UiBytes": 9416,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 0.0411,
+            "flushMs": 0,
+            "updateBytes": 8424,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 7,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/simple/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 177.311,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 52.5787,
+          "UiBytes": 41265704,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 83.1586,
+          "UiBytes": 39469392,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 65.6038,
+          "UiBytes": 41265552,
+          "Gen0": 6,
+          "Gen1": 3,
+          "Gen2": 2,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 3007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/simple/10000",
+      "Area": "list",
+      "Scale": 10000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 164.6762,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.8925,
+          "UiBytes": 673608,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7018,
+          "UiBytes": 637408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7063,
+          "UiBytes": 645280,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 112,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/slider/simple/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 163.8517,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.8439,
+          "UiBytes": 856568,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7545,
+          "UiBytes": 899112,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7092,
+          "UiBytes": 855168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 117,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "list/scroll/suki/1000",
+      "Area": "list",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.5575,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 3.7325,
+          "UiBytes": 1964944,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 3.4319,
+          "UiBytes": 1880272,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.1392,
+          "UiBytes": 2030640,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 305,
+        "width": 1280,
+        "height": 800,
+        "realizedItems": 20
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 283.333,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 151.4525,
+          "UiBytes": 9667640,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 32.9436,
+            "flushMs": 118.4956,
+            "updateBytes": 4293504,
+            "flushBytes": 5373144,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 107.0646,
+          "UiBytes": 9663208,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 31.7529,
+            "flushMs": 75.3073,
+            "updateBytes": 4196240,
+            "flushBytes": 5465976,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 181.5687,
+          "UiBytes": 9626384,
+          "Gen0": 2,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 122.0022,
+            "flushMs": 59.5604,
+            "updateBytes": 4276672,
+            "flushBytes": 5348720,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/simple/1000",
+      "Area": "layout",
+      "Scale": 1000,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 161.5589,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 20.083,
+          "UiBytes": 4809848,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 30.3362,
+          "UiBytes": 4809256,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 13.196,
+          "UiBytes": 4503960,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 15757,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/expander/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 292.6429,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1118.3346,
+          "UiBytes": 315241632,
+          "Gen0": 43,
+          "Gen1": 19,
+          "Gen2": 6,
+          "Metrics": null
+        },
+        {
+          "Ms": 1177.3244,
+          "UiBytes": 315240480,
+          "Gen0": 43,
+          "Gen1": 19,
+          "Gen2": 7,
+          "Metrics": null
+        },
+        {
+          "Ms": 1110.5123,
+          "UiBytes": 315239624,
+          "Gen0": 42,
+          "Gen1": 17,
+          "Gen2": 6,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 28007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/button/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 297.5212,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 35.6455,
+          "UiBytes": 16750000,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 34.9158,
+          "UiBytes": 16537456,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        },
+        {
+          "Ms": 40.57,
+          "UiBytes": 16544384,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1107,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "layout/resize/simple/100",
+      "Area": "layout",
+      "Scale": 100,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 176.353,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.1745,
+          "UiBytes": 510032,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7919,
+          "UiBytes": 320336,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.6465,
+          "UiBytes": 340648,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "datagrid/scroll/suki/1000",
+      "Area": "datagrid",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 308.6387,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.887,
+          "UiBytes": 695280,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.6701,
+          "UiBytes": 479352,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.3623,
+          "UiBytes": 477304,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 1640,
+        "width": 1280,
+        "height": 800,
+        "realizedRows": 27
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/infobar/suki/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 285.6603,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.0536,
+          "UiBytes": 5059240,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 10.9437,
+          "UiBytes": 5061560,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.7677,
+          "UiBytes": 4877424,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 387,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/100",
+      "Area": "theme-diag",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 287.1048,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 14.4287,
+          "UiBytes": 2404832,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 7.782,
+            "flushMs": 6.642,
+            "updateBytes": 1579112,
+            "flushBytes": 824728,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 8.2875,
+          "UiBytes": 1850080,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 7.7467,
+            "flushMs": 0.5388,
+            "updateBytes": 1688960,
+            "flushBytes": 160128,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 12.4694,
+          "UiBytes": 2351768,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 7.2006,
+            "flushMs": 5.2667,
+            "updateBytes": 1586448,
+            "flushBytes": 764328,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 291.627,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 120.0917,
+          "UiBytes": 34258936,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 137.7709,
+          "UiBytes": 34262472,
+          "Gen0": 5,
+          "Gen1": 3,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 103.1518,
+          "UiBytes": 34259552,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/glasscard/suki/100",
+      "Area": "mount",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 320.6488,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 21.9525,
+          "UiBytes": 9747632,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 22.4518,
+          "UiBytes": 9474952,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 19.6244,
+          "UiBytes": 9474952,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 607,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/suki/10",
+      "Area": "theme",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 310.1922,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.9348,
+          "UiBytes": 174408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.7392,
+          "UiBytes": 183472,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.696,
+          "UiBytes": 173760,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/variant-only/mixed/100",
+      "Area": "theme-diag",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 272.9174,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 11.1745,
+          "UiBytes": 2167248,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 5.1249,
+            "flushMs": 6.0447,
+            "updateBytes": 1373184,
+            "flushBytes": 793072,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 5.841,
+          "UiBytes": 1644152,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 5.1555,
+            "flushMs": 0.6832,
+            "updateBytes": 1483032,
+            "flushBytes": 160128,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 5.1719,
+          "UiBytes": 1541040,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 4.6916,
+            "flushMs": 0.478,
+            "updateBytes": 1380520,
+            "flushBytes": 159528,
+            "applicationEvents": 0,
+            "windowEvents": 0,
+            "leafEvents": 0,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/same-write/mixed/100",
+      "Area": "theme-diag",
+      "Scale": 100,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 272.8224,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2.4397,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.43,
+            "flushMs": 0.0048,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2.23,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.228,
+            "flushMs": 0.0011,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2.2624,
+          "UiBytes": 200968,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 2.2587,
+            "flushMs": 0.0024,
+            "updateBytes": 199976,
+            "flushBytes": 0,
+            "applicationEvents": 1,
+            "windowEvents": 1,
+            "leafEvents": 1,
+            "themeEvents": 0,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 2232,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/base/suki/1000",
+      "Area": "theme",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 275.0087,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 223.4113,
+          "UiBytes": 32169464,
+          "Gen0": 3,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 245.1598,
+          "UiBytes": 30112088,
+          "Gen0": 4,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 224.9572,
+          "UiBytes": 27910712,
+          "Gen0": 3,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/glasscard/suki/1000",
+      "Area": "mount",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 292.6116,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 218.7792,
+          "UiBytes": 98059632,
+          "Gen0": 13,
+          "Gen1": 6,
+          "Gen2": 2,
+          "Metrics": null
+        },
+        {
+          "Ms": 230.9501,
+          "UiBytes": 98060120,
+          "Gen0": 15,
+          "Gen1": 8,
+          "Gen2": 4,
+          "Metrics": null
+        },
+        {
+          "Ms": 222.8407,
+          "UiBytes": 98059280,
+          "Gen0": 14,
+          "Gen1": 7,
+          "Gen2": 3,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 6007,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "render/mixed/simple/500",
+      "Area": "render",
+      "Scale": 500,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 163.577,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 6.975,
+          "UiBytes": 292104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.1806,
+          "UiBytes": 292104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 4.9867,
+          "UiBytes": 292104,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 7882,
+        "width": 1280,
+        "height": 800,
+        "pixels": 1024000,
+        "paintedGridSamples": 522
+      },
+      "Error": null
+    },
+    {
+      "Id": "colorpicker/mount/suki/5",
+      "Area": "colorpicker",
+      "Scale": 5,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 378.6255,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 30.8882,
+          "UiBytes": 19145272,
+          "Gen0": 1,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 32.348,
+          "UiBytes": 18440560,
+          "Gen0": 1,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 35.3133,
+          "UiBytes": 18998912,
+          "Gen0": 2,
+          "Gen1": 1,
+          "Gen2": 1,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 522,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "mount/mixed/simple/10",
+      "Area": "mount",
+      "Scale": 10,
+      "Theme": "simple",
+      "Replica": 1,
+      "AppSetupMs": 187.9822,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1.9932,
+          "UiBytes": 1425696,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.4088,
+          "UiBytes": 1361408,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 1.4566,
+          "UiBytes": 1360664,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 130,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme/locale/suki/10",
+      "Area": "theme",
+      "Scale": 10,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 279.8743,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.142,
+          "UiBytes": 489248,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.1528,
+          "UiBytes": 489344,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 5.1337,
+          "UiBytes": 489248,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {
+        "visuals": 225,
+        "width": 1280,
+        "height": 800,
+        "applicationStyles": 1
+      },
+      "Error": null
+    }
+  ]
+}

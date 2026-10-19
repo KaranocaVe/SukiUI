@@ -1,0 +1,1745 @@
+{
+  "Started": "2026-10-19T22:37:42.85865+08:00",
+  "Finished": "2026-10-19T22:41:39.960932+08:00",
+  "Metadata": {
+    "commit": "205fd1f50ea1470c72bfc55cb69c4008a1511b46",
+    "workingTree": "M SukiUI.PerformanceTests/Program.cs\n M SukiUI.PerformanceTests/ThemeDiagnostics.cs\n M SukiUI/Theme/Index.axaml.cs\n?? SukiUI.PerformanceTests/ThemeRegressionScenarios.cs\n?? ThemeNativeSmoke/",
+    "os": "Darwin 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:59 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8142",
+    "architecture": "Arm64",
+    "runtime": ".NET 8.0.32",
+    "cpu": "Apple M5",
+    "logicalProcessors": "10",
+    "avalonia": "12.1.1.0",
+    "configuration": "Release",
+    "tieredCompilation": "disabled in child processes",
+    "renderer": "Avalonia.Headless + Skia CPU; no GPU or native window",
+    "iterations": "7",
+    "warmups": "3",
+    "repetitions": "3",
+    "seed": "1730",
+    "command": "/Users/karanocave/.codex/worktrees/theme-resource-investigation/SukiUI/artifacts/theme-validation/frozen/baseline/SukiUI.PerformanceTests.dll --filter theme-diag/base/mixed/1000,theme-diag/accent/mixed/1000,theme-diag/base/shadcn/1000,theme-diag/repeat-theme/mixed/1000 --warmup 3 --iterations 7 --repetitions 1 --seed 1730 --output /Users/karanocave/.codex/worktrees/theme-resource-investigation/SukiUI/artifacts/theme-validation/paired/baseline-1",
+    "SukiUI.PerformanceTestsSha256": "ECF6E64B074689401D5F894E4AC129E3F0AC06EA8BD48CBFBDABAD47D5D3BDA5",
+    "SukiUISha256": "C1E16453E7836B8984687D0A9194EF31BE8F5D400D071596C323C4DDF4D85BEA",
+    "SukiUI.MotionSha256": "46FCFDDB9FE8F97F6B5FE6AB31B67698DE21C5079220F6A5DAD22EF46E3C04F1",
+    "SukiUI.ConditionalXAMLSha256": "38F7BFC38030B4E3842E8DAE98F04E2F3A640CE075AD20402F24B704218A581C",
+    "blockOrder": "[('baseline', 1), ('final', 1), ('final', 2), ('baseline', 2), ('baseline', 3), ('final', 3)]"
+  },
+  "Results": [
+    {
+      "Id": "theme-diag/base/shadcn/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 852.9049,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2042.43,
+          "UiBytes": 151263888,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1923.9561,
+            "flushMs": 118.4688,
+            "updateBytes": 137686912,
+            "flushBytes": 13575984,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1996.3692,
+          "UiBytes": 187659896,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1636.2696,
+            "flushMs": 360.0954,
+            "updateBytes": 142107144,
+            "flushBytes": 45551760,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2092.1927,
+          "UiBytes": 151136576,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1995.9435,
+            "flushMs": 96.2452,
+            "updateBytes": 137687064,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2009.5517,
+          "UiBytes": 187660632,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1660.5735,
+            "flushMs": 348.9726,
+            "updateBytes": 142107144,
+            "flushBytes": 45552496,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2111.5962,
+          "UiBytes": 151136424,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 2015.1232,
+            "flushMs": 96.4696,
+            "updateBytes": 137686912,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2094.5344,
+          "UiBytes": 187661624,
+          "Gen0": 24,
+          "Gen1": 6,
+          "Gen2": 2,
+          "Metrics": {
+            "updateMs": 1668.5262,
+            "flushMs": 426.0037,
+            "updateBytes": 142107144,
+            "flushBytes": 45553488,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2035.1534,
+          "UiBytes": 151135024,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1945.1466,
+            "flushMs": 90.0047,
+            "updateBytes": 137686760,
+            "flushBytes": 13447272,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.6969,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1056.5007,
+          "UiBytes": 84598888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 985.0345,
+            "flushMs": 71.4621,
+            "updateBytes": 76493224,
+            "flushBytes": 8104672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1066.6071,
+          "UiBytes": 86727392,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 995.3516,
+            "flushMs": 71.2511,
+            "updateBytes": 77375072,
+            "flushBytes": 9351328,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1058.3899,
+          "UiBytes": 84597640,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 988.9159,
+            "flushMs": 69.4697,
+            "updateBytes": 76493224,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1139.2305,
+          "UiBytes": 86730504,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1069.3083,
+            "flushMs": 69.9179,
+            "updateBytes": 77375072,
+            "flushBytes": 9354440,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1084.4992,
+          "UiBytes": 84598888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1015.5095,
+            "flushMs": 68.9853,
+            "updateBytes": 76493224,
+            "flushBytes": 8104672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1117.6238,
+          "UiBytes": 87571072,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1008.1233,
+            "flushMs": 109.4955,
+            "updateBytes": 77375072,
+            "flushBytes": 10195008,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1279.3706,
+          "UiBytes": 84597488,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1214.3409,
+            "flushMs": 65.0252,
+            "updateBytes": 76493072,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 278.2317,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 924.7306,
+          "UiBytes": 66625568,
+          "Gen0": 7,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 901.7941,
+            "flushMs": 22.9319,
+            "updateBytes": 61908376,
+            "flushBytes": 4716200,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 930.3512,
+          "UiBytes": 66832832,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 889.4947,
+            "flushMs": 40.8521,
+            "updateBytes": 61828224,
+            "flushBytes": 5003616,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 967.5952,
+          "UiBytes": 66833304,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 924.5934,
+            "flushMs": 42.9976,
+            "updateBytes": 61828224,
+            "flushBytes": 5004088,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 945.0035,
+          "UiBytes": 66832832,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 918.4621,
+            "flushMs": 26.5371,
+            "updateBytes": 61828224,
+            "flushBytes": 5003616,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 954.762,
+          "UiBytes": 67465768,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 895.869,
+            "flushMs": 58.887,
+            "updateBytes": 61828224,
+            "flushBytes": 5636552,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 972.3753,
+          "UiBytes": 67294888,
+          "Gen0": 9,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 915.9408,
+            "flushMs": 56.4298,
+            "updateBytes": 61827968,
+            "flushBytes": 5465928,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1054.8647,
+          "UiBytes": 66626808,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1031.2291,
+            "flushMs": 23.6304,
+            "updateBytes": 61908392,
+            "flushBytes": 4717424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/repeat-theme/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 340.7405,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 886.2838,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 886.2381,
+            "flushMs": 0.0432,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 863.5645,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 863.5215,
+            "flushMs": 0.0388,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 869.1058,
+          "UiBytes": 59623808,
+          "Gen0": 8,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 869.0653,
+            "flushMs": 0.0367,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 864.5161,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 864.4709,
+            "flushMs": 0.0404,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 858.8215,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 858.7636,
+            "flushMs": 0.0526,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 853.3215,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 853.2757,
+            "flushMs": 0.0417,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 860.5319,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 860.4884,
+            "flushMs": 0.0397,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 2,
+      "AppSetupMs": 567.0402,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1103.9747,
+          "UiBytes": 84598888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1026.8003,
+            "flushMs": 77.1706,
+            "updateBytes": 76493224,
+            "flushBytes": 8104672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1291.0779,
+          "UiBytes": 86727392,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1156.8986,
+            "flushMs": 134.1721,
+            "updateBytes": 77375072,
+            "flushBytes": 9351328,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1118.3691,
+          "UiBytes": 84597640,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1037.2755,
+            "flushMs": 81.0877,
+            "updateBytes": 76493224,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1317.5857,
+          "UiBytes": 86730504,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1235.1588,
+            "flushMs": 82.4217,
+            "updateBytes": 77375072,
+            "flushBytes": 9354440,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1188.571,
+          "UiBytes": 84598888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1117.3098,
+            "flushMs": 71.2566,
+            "updateBytes": 76493224,
+            "flushBytes": 8104672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1126.1531,
+          "UiBytes": 87571072,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1014.2406,
+            "flushMs": 111.9076,
+            "updateBytes": 77375072,
+            "flushBytes": 10195008,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1075.898,
+          "UiBytes": 84597488,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1009.2201,
+            "flushMs": 66.6739,
+            "updateBytes": 76493072,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/repeat-theme/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 2,
+      "AppSetupMs": 283.2206,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 903.3519,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 903.2917,
+            "flushMs": 0.0555,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 895.8089,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 895.6936,
+            "flushMs": 0.0981,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 884.4152,
+          "UiBytes": 59623808,
+          "Gen0": 8,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 884.369,
+            "flushMs": 0.0416,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 901.256,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 901.1996,
+            "flushMs": 0.0517,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1234.8604,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1234.805,
+            "flushMs": 0.0501,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 885.2724,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 885.2229,
+            "flushMs": 0.0451,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 887.3721,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 887.3221,
+            "flushMs": 0.0458,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 2,
+      "AppSetupMs": 278.5492,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 941.886,
+          "UiBytes": 66625624,
+          "Gen0": 7,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 918.1152,
+            "flushMs": 23.7661,
+            "updateBytes": 61908376,
+            "flushBytes": 4716256,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 943.4812,
+          "UiBytes": 66832776,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 902.8453,
+            "flushMs": 40.6245,
+            "updateBytes": 61828224,
+            "flushBytes": 5003560,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 954.6535,
+          "UiBytes": 66833360,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 908.9255,
+            "flushMs": 45.7232,
+            "updateBytes": 61828224,
+            "flushBytes": 5004144,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 950.8067,
+          "UiBytes": 66832776,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 924.3032,
+            "flushMs": 26.4984,
+            "updateBytes": 61828224,
+            "flushBytes": 5003560,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 972.9496,
+          "UiBytes": 67465512,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 915.9743,
+            "flushMs": 56.97,
+            "updateBytes": 61828224,
+            "flushBytes": 5636296,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 979.3156,
+          "UiBytes": 67294888,
+          "Gen0": 9,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 922.0914,
+            "flushMs": 57.2182,
+            "updateBytes": 61827968,
+            "flushBytes": 5465928,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1079.2201,
+          "UiBytes": 66626792,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1055.9485,
+            "flushMs": 23.2677,
+            "updateBytes": 61908376,
+            "flushBytes": 4717424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/shadcn/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "shadcn",
+      "Replica": 2,
+      "AppSetupMs": 292.7318,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2066.8535,
+          "UiBytes": 151263888,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1959.644,
+            "flushMs": 107.2032,
+            "updateBytes": 137686912,
+            "flushBytes": 13575984,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2165.4208,
+          "UiBytes": 187660192,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1743.4806,
+            "flushMs": 421.9355,
+            "updateBytes": 142107144,
+            "flushBytes": 45552056,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2368.3351,
+          "UiBytes": 151136576,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 2251.596,
+            "flushMs": 116.734,
+            "updateBytes": 137687064,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2279.8193,
+          "UiBytes": 187660672,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1877.6054,
+            "flushMs": 402.2093,
+            "updateBytes": 142107144,
+            "flushBytes": 45552536,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2296.9239,
+          "UiBytes": 151136424,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 2196.8137,
+            "flushMs": 100.1063,
+            "updateBytes": 137686912,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2306.1822,
+          "UiBytes": 187661640,
+          "Gen0": 24,
+          "Gen1": 6,
+          "Gen2": 2,
+          "Metrics": {
+            "updateMs": 1827.2567,
+            "flushMs": 478.9217,
+            "updateBytes": 142107144,
+            "flushBytes": 45553504,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2088.8185,
+          "UiBytes": 151135024,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1989.9583,
+            "flushMs": 98.8556,
+            "updateBytes": 137686760,
+            "flushBytes": 13447272,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/shadcn/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "shadcn",
+      "Replica": 3,
+      "AppSetupMs": 920.317,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 2068.3267,
+          "UiBytes": 151263888,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1959.488,
+            "flushMs": 108.8351,
+            "updateBytes": 137686912,
+            "flushBytes": 13575984,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1969.009,
+          "UiBytes": 187660200,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1609.8057,
+            "flushMs": 359.1994,
+            "updateBytes": 142107144,
+            "flushBytes": 45552064,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2048.0875,
+          "UiBytes": 151136576,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1947.1942,
+            "flushMs": 100.8891,
+            "updateBytes": 137687064,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2159.0111,
+          "UiBytes": 187660608,
+          "Gen0": 23,
+          "Gen1": 5,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1784.7289,
+            "flushMs": 374.2789,
+            "updateBytes": 142107144,
+            "flushBytes": 45552472,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2113.7858,
+          "UiBytes": 151136424,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 2009.3492,
+            "flushMs": 104.433,
+            "updateBytes": 137686912,
+            "flushBytes": 13448520,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 2131.951,
+          "UiBytes": 187661648,
+          "Gen0": 24,
+          "Gen1": 6,
+          "Gen2": 2,
+          "Metrics": {
+            "updateMs": 1705.7105,
+            "flushMs": 426.2366,
+            "updateBytes": 142107144,
+            "flushBytes": 45553512,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1972.3716,
+          "UiBytes": 151135024,
+          "Gen0": 18,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1884.6032,
+            "flushMs": 87.7647,
+            "updateBytes": 137686760,
+            "flushBytes": 13447272,
+            "applicationEvents": 60,
+            "windowEvents": 60,
+            "leafEvents": 60,
+            "themeEvents": 2,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/accent/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 3,
+      "AppSetupMs": 278.3609,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1063.5551,
+          "UiBytes": 66625880,
+          "Gen0": 7,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1038.3389,
+            "flushMs": 25.2117,
+            "updateBytes": 61908376,
+            "flushBytes": 4716512,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 978.2572,
+          "UiBytes": 66833360,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 937.1331,
+            "flushMs": 41.1192,
+            "updateBytes": 61828224,
+            "flushBytes": 5004144,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 959.5562,
+          "UiBytes": 66832776,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 916.4095,
+            "flushMs": 43.1417,
+            "updateBytes": 61828224,
+            "flushBytes": 5003560,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 965.781,
+          "UiBytes": 66833360,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 938.2477,
+            "flushMs": 27.528,
+            "updateBytes": 61828224,
+            "flushBytes": 5004144,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1025.4575,
+          "UiBytes": 67465768,
+          "Gen0": 8,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 963.282,
+            "flushMs": 62.1695,
+            "updateBytes": 61828224,
+            "flushBytes": 5636552,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1143.2091,
+          "UiBytes": 67295672,
+          "Gen0": 9,
+          "Gen1": 3,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1079.7386,
+            "flushMs": 63.4647,
+            "updateBytes": 61827968,
+            "flushBytes": 5466712,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1227.1792,
+          "UiBytes": 66627152,
+          "Gen0": 8,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1200.1977,
+            "flushMs": 26.9746,
+            "updateBytes": 61908424,
+            "flushBytes": 4717736,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/base/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 3,
+      "AppSetupMs": 340.1435,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 1194.2226,
+          "UiBytes": 84470888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1118.7854,
+            "flushMs": 75.4334,
+            "updateBytes": 76493224,
+            "flushBytes": 7976672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1191.183,
+          "UiBytes": 86727392,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1114.3334,
+            "flushMs": 76.8457,
+            "updateBytes": 77375072,
+            "flushBytes": 9351328,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1764.5921,
+          "UiBytes": 84597640,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1651.9944,
+            "flushMs": 112.5921,
+            "updateBytes": 76493224,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1402.6493,
+          "UiBytes": 86730520,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 1,
+          "Metrics": {
+            "updateMs": 1332.5527,
+            "flushMs": 70.0927,
+            "updateBytes": 77375088,
+            "flushBytes": 9354440,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1060.4392,
+          "UiBytes": 84598888,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 994.093,
+            "flushMs": 66.3429,
+            "updateBytes": 76493224,
+            "flushBytes": 8104672,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1099.2217,
+          "UiBytes": 87571072,
+          "Gen0": 11,
+          "Gen1": 2,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 992.2989,
+            "flushMs": 106.921,
+            "updateBytes": 77375072,
+            "flushBytes": 10195008,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 1113.9122,
+          "UiBytes": 84597488,
+          "Gen0": 10,
+          "Gen1": 1,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 1042.9315,
+            "flushMs": 70.9769,
+            "updateBytes": 76493072,
+            "flushBytes": 8103424,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    },
+    {
+      "Id": "theme-diag/repeat-theme/mixed/1000",
+      "Area": "theme-diag",
+      "Scale": 1000,
+      "Theme": "suki",
+      "Replica": 3,
+      "AppSetupMs": 300.8146,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 878.8415,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 878.798,
+            "flushMs": 0.0393,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 961.088,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 961.0399,
+            "flushMs": 0.0437,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 932.7465,
+          "UiBytes": 59623808,
+          "Gen0": 8,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 932.6975,
+            "flushMs": 0.0439,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 920.0997,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 920.0592,
+            "flushMs": 0.036,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 874.1921,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 874.1465,
+            "flushMs": 0.0404,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 858.0877,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 3,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 858.0443,
+            "flushMs": 0.0393,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        },
+        {
+          "Ms": 880.7632,
+          "UiBytes": 59623808,
+          "Gen0": 7,
+          "Gen1": 4,
+          "Gen2": 0,
+          "Metrics": {
+            "updateMs": 880.7097,
+            "flushMs": 0.0491,
+            "updateBytes": 59622816,
+            "flushBytes": 0,
+            "applicationEvents": 30,
+            "windowEvents": 30,
+            "leafEvents": 30,
+            "themeEvents": 1,
+            "replacedVisuals": 0
+          }
+        }
+      ],
+      "Observations": {
+        "visuals": 22257,
+        "width": 1280,
+        "height": 800
+      },
+      "Error": null
+    }
+  ]
+}

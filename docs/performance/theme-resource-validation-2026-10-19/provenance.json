@@ -1,0 +1,36 @@
+{
+  "baselineSourceRevision": "c2bf6bcaeef4a735f1d5f05c299262cff47ac194",
+  "baselineSourceSha256": "141e6cb92a07748a482b9363402c387f7b622e22db393030a6d0b389a66d6cd3",
+  "finalSourceSha256": "a6c28ab5fccf2f381123de2adf30943c36dd2814080503ec41a1304c3c2aaa2d",
+  "patchSha256": "e6b6ca1212854f1236ab267d825667ab51daa1df7a9f0bcdc5d8baf558106f73",
+  "dllsPerRuntime": 50,
+  "onlyChangedDll": "SukiUI.dll",
+  "pairedProcesses": 24,
+  "measuredSamples": 168,
+  "warmupOperations": 72,
+  "blockOrder": [
+    "baseline-1",
+    "final-1",
+    "final-2",
+    "baseline-2",
+    "baseline-3",
+    "final-3"
+  ],
+  "uiRegressionScenarios": 151,
+  "focusedRegressionScenarios": 14,
+  "nativeConfirmations": [
+    "baseline/suki",
+    "final/suki",
+    "final/shadcn"
+  ],
+  "sourceFilesSha256": {
+    "SukiUI/Theme/Index.axaml.cs": "a6c28ab5fccf2f381123de2adf30943c36dd2814080503ec41a1304c3c2aaa2d",
+    "SukiUI.PerformanceTests/Program.cs": "3f80a58b2436c06f9376eeaa087de61782fd37e2997a261cb15a97573b6f33a7",
+    "SukiUI.PerformanceTests/Workload.cs": "7a62ecd304d6b0f424d4948e7279890dbba33ee2d7ad41dad1b7c04b7424a872",
+    "SukiUI.PerformanceTests/ThemeDiagnostics.cs": "51e35ba8c02bcae6c38194603bfdc9011b409e9a519996fe6979c7aea0ffbfb5",
+    "SukiUI.PerformanceTests/ThemeRegressionScenarios.cs": "1331b6b398dc4b6e321a9f5eb5f58347bc3c4a9248a2c459bbdf9066e9214af9"
+  },
+  "primaryIntegrationRegressionScenarios": 14,
+  "savedNativeProjectBuildPassed": true,
+  "nativeInitialStartupFailures": 2
+}

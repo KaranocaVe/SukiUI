@@ -1,0 +1,87 @@
+{
+  "mode": "shadcn",
+  "passed": true,
+  "outputPath": "/Users/karanocave/.codex/worktrees/theme-resource-investigation/SukiUI/artifacts/theme-validation/native-final-shadcn-attempt1.json",
+  "nativeHandle": 525813255296,
+  "colorCallbacks": 18,
+  "baseCallbacks": 6,
+  "paletteKeysVerified": 30,
+  "styleCount": 2,
+  "initialStyleCount": 2,
+  "resourceDictionaryPreserved": true,
+  "checks": [
+    {
+      "step": 0,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "White"
+    },
+    {
+      "step": 0,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 1,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Black"
+    },
+    {
+      "step": 1,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    },
+    {
+      "step": 2,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "White"
+    },
+    {
+      "step": 2,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 3,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Black"
+    },
+    {
+      "step": 3,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    },
+    {
+      "step": 4,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "White"
+    },
+    {
+      "step": 4,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 5,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Black"
+    },
+    {
+      "step": 5,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    }
+  ],
+  "error": null
+}

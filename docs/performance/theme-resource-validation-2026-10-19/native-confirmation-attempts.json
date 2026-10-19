@@ -1,0 +1,16 @@
+[
+  {
+    "mode": "suki",
+    "attempt": 1,
+    "exitCode": 0,
+    "passed": true,
+    "error": null
+  },
+  {
+    "mode": "shadcn",
+    "attempt": 1,
+    "exitCode": 0,
+    "passed": true,
+    "error": null
+  }
+]

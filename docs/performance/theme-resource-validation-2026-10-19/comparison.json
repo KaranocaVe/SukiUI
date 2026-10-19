@@ -1,0 +1,142 @@
+[
+  {
+    "id": "theme-diag/accent/mixed/1000",
+    "baseline": {
+      "ms": 954.762,
+      "processMedians": [
+        954.762,
+        954.6535,
+        1025.4575
+      ],
+      "uiBytes": 66832832,
+      "events": [
+        30
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "final": {
+      "ms": 79.4989,
+      "processMedians": [
+        85.3953,
+        77.3893,
+        79.4989
+      ],
+      "uiBytes": 9193624,
+      "events": [
+        1
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "speedup": 12.009751078316805,
+    "reductionPercent": 91.67343275077977
+  },
+  {
+    "id": "theme-diag/base/mixed/1000",
+    "baseline": {
+      "ms": 1126.1531,
+      "processMedians": [
+        1084.4992,
+        1126.1531,
+        1191.183
+      ],
+      "uiBytes": 84598888,
+      "events": [
+        30
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "final": {
+      "ms": 240.8133,
+      "processMedians": [
+        223.598,
+        240.8133,
+        242.7038
+      ],
+      "uiBytes": 28605144,
+      "events": [
+        1
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "speedup": 4.6764572388651295,
+    "reductionPercent": 78.6162911597011
+  },
+  {
+    "id": "theme-diag/base/shadcn/1000",
+    "baseline": {
+      "ms": 2068.3267,
+      "processMedians": [
+        2042.43,
+        2279.8193,
+        2068.3267
+      ],
+      "uiBytes": 151263888,
+      "events": [
+        60
+      ],
+      "colorCallbacks": [
+        2
+      ]
+    },
+    "final": {
+      "ms": 386.6672,
+      "processMedians": [
+        386.6672,
+        544.9077,
+        381.2742
+      ],
+      "uiBytes": 37626480,
+      "events": [
+        2
+      ],
+      "colorCallbacks": [
+        2
+      ]
+    },
+    "speedup": 5.349113397774624,
+    "reductionPercent": 81.30531313065774
+  },
+  {
+    "id": "theme-diag/repeat-theme/mixed/1000",
+    "baseline": {
+      "ms": 880.7632,
+      "processMedians": [
+        863.5645,
+        895.8089,
+        880.7632
+      ],
+      "uiBytes": 59623808,
+      "events": [
+        30
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "final": {
+      "ms": 26.5915,
+      "processMedians": [
+        26.4518,
+        26.8227,
+        26.5915
+      ],
+      "uiBytes": 1992080,
+      "events": [
+        1
+      ],
+      "colorCallbacks": [
+        1
+      ]
+    },
+    "speedup": 33.12198258842111,
+    "reductionPercent": 96.9808570566981
+  }
+]

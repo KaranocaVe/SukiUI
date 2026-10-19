@@ -1,0 +1,45 @@
+name: Theme resource regression validation
+
+on:
+  push:
+    branches: [benchmarks/theme-resource-batching]
+
+permissions:
+  contents: read
+
+jobs:
+  theme-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: evidence
+      - uses: actions/checkout@v4
+        with:
+          ref: e9d6dd284ab7de344e2ceefec92e39af629c87ff
+          path: candidate
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            10.0.x
+            8.0.x
+      - name: Add external test harness to the exact production commit
+        run: |
+          cp -R evidence/SukiUI.PerformanceTests candidate/
+          cp evidence/Directory.Packages.props candidate/Directory.Packages.props
+          test "$(git -C candidate rev-parse HEAD)" = e9d6dd284ab7de344e2ceefec92e39af629c87ff
+          echo 'a6c28ab5fccf2f381123de2adf30943c36dd2814080503ec41a1304c3c2aaa2d  candidate/SukiUI/Theme/Index.axaml.cs' | sha256sum --check
+      - name: Build
+        run: dotnet build candidate/SukiUI.PerformanceTests -c Release --nologo
+      - name: Run 14 targeted regressions
+        run: >-
+          dotnet run --project candidate/SukiUI.PerformanceTests -c Release --no-build --
+          --filter theme-regression/ --warmup 1 --iterations 3
+          --output '${{ github.workspace }}/results'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: theme-regression-e9d6dd2
+          path: results
+          if-no-files-found: ignore

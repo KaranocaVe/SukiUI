@@ -1,0 +1,87 @@
+{
+  "mode": "suki",
+  "passed": true,
+  "outputPath": "/Users/karanocave/.codex/worktrees/theme-resource-investigation/SukiUI/artifacts/theme-validation/native-baseline.json",
+  "nativeHandle": 517324196992,
+  "colorCallbacks": 12,
+  "baseCallbacks": 6,
+  "paletteKeysVerified": 30,
+  "styleCount": 1,
+  "initialStyleCount": 1,
+  "resourceDictionaryPreserved": true,
+  "checks": [
+    {
+      "step": 0,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "Blue"
+    },
+    {
+      "step": 0,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 1,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Red"
+    },
+    {
+      "step": 1,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    },
+    {
+      "step": 2,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "Blue"
+    },
+    {
+      "step": 2,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 3,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Red"
+    },
+    {
+      "step": 3,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    },
+    {
+      "step": 4,
+      "stage": "base",
+      "variant": "Dark",
+      "palette": "Blue"
+    },
+    {
+      "step": 4,
+      "stage": "color",
+      "variant": "Dark",
+      "palette": "Red"
+    },
+    {
+      "step": 5,
+      "stage": "base",
+      "variant": "Light",
+      "palette": "Red"
+    },
+    {
+      "step": 5,
+      "stage": "color",
+      "variant": "Light",
+      "palette": "Blue"
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,546 @@
+{
+  "Started": "2026-10-19T22:48:17.608787+08:00",
+  "Finished": "2026-10-19T22:48:25.004307+08:00",
+  "Metadata": {
+    "commit": "c2bf6bcaeef4a735f1d5f05c299262cff47ac194",
+    "workingTree": "M Directory.Packages.props\n M README.md\n M Suki.sln\n M SukiUI.ConditionalXAML/Helpers/ConditionalXAML/If.cs\n M SukiUI/Theme/Index.axaml.cs\n?? .github/workflows/performance.yml\n?? SukiUI.PerformanceTests/\n?? docs/performance/",
+    "os": "Darwin 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:59 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8142",
+    "architecture": "Arm64",
+    "runtime": ".NET 8.0.32",
+    "cpu": "Apple M5",
+    "logicalProcessors": "10",
+    "avalonia": "12.1.1.0",
+    "configuration": "Release",
+    "tieredCompilation": "disabled in child processes",
+    "renderer": "Avalonia.Headless \u002B Skia CPU; no GPU or native window",
+    "iterations": "3",
+    "warmups": "1",
+    "repetitions": "1",
+    "seed": "2718",
+    "command": "/private/tmp/suki-theme-integration.hV2rI6/build/bin/SukiUI.PerformanceTests/release/SukiUI.PerformanceTests.dll --filter theme-regression/ --iterations 3 --warmup 1 --seed 2718 --output /tmp/suki-theme-integration.hV2rI6/results",
+    "SukiUI.PerformanceTestsSha256": "0A64591467F9D76592F6F2ED8C7B5B4242C5709469D79A99601D733AF6EEAEEB",
+    "SukiUISha256": "322D9E0AEA6942F6D4D23D28C1B6D1EB02651C5A09C13E49CCACA2B009C080DD",
+    "SukiUI.MotionSha256": "1E141953D89A56634C3AB7F5CFF9AF46C72A8E904422457B6FAB8479E27BDC4F",
+    "SukiUI.ConditionalXAMLSha256": "5DA54E41DE64C67F7190C491D962E478D44E8EFF4BF4187CC872DE7BC03FA77B"
+  },
+  "Results": [
+    {
+      "Id": "theme-regression/callback/color-throws-recovers",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 598.5312,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.06,
+          "UiBytes": 13688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0373,
+          "UiBytes": 13688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0337,
+          "UiBytes": 13688,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/custom-dictionary-lazy-variant",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 322.9934,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.2187,
+          "UiBytes": 41312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2002,
+          "UiBytes": 41312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2001,
+          "UiBytes": 41312,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/all-colors",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 295.2398,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.1602,
+          "UiBytes": 175744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1568,
+          "UiBytes": 175744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1568,
+          "UiBytes": 175744,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/callback/resources-throws-recovers",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 300.5255,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0596,
+          "UiBytes": 14376,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0372,
+          "UiBytes": 14376,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0337,
+          "UiBytes": 14376,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/complete-notification",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 281.2622,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0128,
+          "UiBytes": 8328,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0071,
+          "UiBytes": 7792,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0062,
+          "UiBytes": 7792,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/callback/count-shadcn",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "shadcn",
+      "Replica": 1,
+      "AppSetupMs": 295.9963,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0457,
+          "UiBytes": 25000,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0326,
+          "UiBytes": 24464,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0312,
+          "UiBytes": 24464,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/callback/count-suki",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 282.5578,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0234,
+          "UiBytes": 14776,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0155,
+          "UiBytes": 14240,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.015,
+          "UiBytes": 14240,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/custom-dictionary-indexer",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 497.5972,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 5.918,
+          "UiBytes": 34840,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2972,
+          "UiBytes": 34304,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.2931,
+          "UiBytes": 34304,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/deferred-overwrite",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 337.1446,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.038,
+          "UiBytes": 12344,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0296,
+          "UiBytes": 12344,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0284,
+          "UiBytes": 12344,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/inherited-same-values",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 326.9341,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0915,
+          "UiBytes": 18072,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0746,
+          "UiBytes": 18072,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0732,
+          "UiBytes": 18072,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/reapply-repairs",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 309.0891,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0179,
+          "UiBytes": 5704,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.008,
+          "UiBytes": 5704,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0073,
+          "UiBytes": 5704,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/palette/equals-is-not-consulted",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 343.7307,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0615,
+          "UiBytes": 11952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0491,
+          "UiBytes": 11952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0472,
+          "UiBytes": 11952,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/callback/color-reentry",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 283.3742,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 0.0215,
+          "UiBytes": 13168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0119,
+          "UiBytes": 13168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0114,
+          "UiBytes": 13168,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    },
+    {
+      "Id": "theme-regression/dynamic-resource/toggle-switch",
+      "Area": "theme-regression",
+      "Scale": 1,
+      "Theme": "suki",
+      "Replica": 1,
+      "AppSetupMs": 295.8099,
+      "PeakWorkingSetBytes": 0,
+      "Samples": [
+        {
+          "Ms": 4.4605,
+          "UiBytes": 31360,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.1245,
+          "UiBytes": 19880,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        },
+        {
+          "Ms": 0.0822,
+          "UiBytes": 19376,
+          "Gen0": 0,
+          "Gen1": 0,
+          "Gen2": 0,
+          "Metrics": null
+        }
+      ],
+      "Observations": {},
+      "Error": null
+    }
+  ]
+}
