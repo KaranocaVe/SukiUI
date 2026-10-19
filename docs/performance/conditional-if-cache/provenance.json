@@ -1,0 +1,13 @@
+{
+  "baseCommit": "c2bf6bcaeef4a735f1d5f05c299262cff47ac194",
+  "sourcePath": "SukiUI.ConditionalXAML/Helpers/ConditionalXAML/If.cs",
+  "beforeSourceSha256": "2336b811463c2b636eea1e4caaf4fe74a2d3eb5ccb7ab71f8bffa5fd00cb407d",
+  "afterSourceSha256": "86fb5780000831b29e3ca18fab90ff0d5a77898c243469c477ee640be2d2eff2",
+  "benchmarkProject": "SukiUI.PerformanceTests",
+  "processesPerScenario": 3,
+  "warmupsPerProcess": 3,
+  "samplesPerProcess": 7,
+  "seed": 1729,
+  "regressionTestsPassedBefore": 16,
+  "regressionTestsPassedAfter": 16
+}

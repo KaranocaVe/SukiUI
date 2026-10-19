@@ -1,0 +1,41 @@
+name: ConditionalXAML regression tests
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'SukiUI.ConditionalXAML/**'
+      - 'SukiUI.ConditionalXAML.Tests/**'
+      - 'SukiUI.PerformanceTests/**'
+      - 'Directory.*.props'
+      - '.github/workflows/conditional-xaml.yml'
+  pull_request:
+    paths:
+      - 'SukiUI.ConditionalXAML/**'
+      - 'SukiUI.ConditionalXAML.Tests/**'
+      - 'SukiUI.PerformanceTests/**'
+      - 'Directory.*.props'
+      - '.github/workflows/conditional-xaml.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - name: Verify visibility behavior
+        run: dotnet test SukiUI.ConditionalXAML.Tests -c Release
+      - name: Build performance runner
+        run: dotnet build SukiUI.PerformanceTests -c Release
+      - name: Smoke performance scenarios
+        run: dotnet run --project SukiUI.PerformanceTests -c Release --no-build -- --smoke --output artifacts/performance/ci
+      - name: Save raw samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conditional-xaml-performance
+          path: artifacts/performance/ci

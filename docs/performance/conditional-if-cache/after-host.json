@@ -1,0 +1,7 @@
+{
+  "captured": "2026-10-19T20:38:02.621111+08:00",
+  "sysctl -n vm.loadavg": "{ 3.28 3.72 3.77 }",
+  "pmset -g batt": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=23789667)\t100%; charged; 0:00 remaining present: true",
+  "pmset -g therm": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "sw_vers": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434"
+}
